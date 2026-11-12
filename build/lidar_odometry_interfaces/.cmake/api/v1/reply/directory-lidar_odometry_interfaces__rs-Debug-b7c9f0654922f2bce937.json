@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lidar_odometry_interfaces__rs",
+		"source" : "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces/lidar_odometry_interfaces__rs"
+	}
+}

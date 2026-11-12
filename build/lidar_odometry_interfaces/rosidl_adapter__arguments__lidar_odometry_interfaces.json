@@ -1,0 +1,6 @@
+{
+  "package_name": "lidar_odometry_interfaces",
+  "non_idl_tuples": [
+    "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/eagle_perception/src/lidar_odometry_interfaces:msg/ProcessingStats.msg"
+  ]
+}

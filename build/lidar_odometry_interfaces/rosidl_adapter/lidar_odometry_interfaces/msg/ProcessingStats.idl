@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lidar_odometry_interfaces/msg/ProcessingStats.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module lidar_odometry_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "added preprocessing and registration to better analyze the stats and find botttlenecks")
+    struct ProcessingStats {
+      @verbatim (language="comment", text=
+        "stamp = timestamp della scansione")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "how many points in the raw scan")
+      uint32 input_points;
+
+      uint32 filtered_points;
+
+      double preprocessing_ms;
+
+      double registration_ms;
+
+      double total_ms;
+    };
+  };
+};
