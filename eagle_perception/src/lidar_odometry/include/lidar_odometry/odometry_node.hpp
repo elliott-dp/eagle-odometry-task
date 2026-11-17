@@ -15,7 +15,11 @@
 #include <std_msgs/msg/header.hpp>
 #include "lidar_odometry/preprocessor.hpp"
 
+#include "lidar_odometry/local_map.hpp"
+#include "lidar_odometry/scan_matcher.hpp"
+
 namespace lidar_odometry {
+
 
 class OdometryNode : public rclcpp::Node {
 public:
@@ -31,9 +35,20 @@ private:
   PointCloud::Ptr toPcl(const sensor_msgs::msg::PointCloud2 & msg) const;
   PointCloud::Ptr toBaseLink(const PointCloud & sensor_cloud) const;  // replaces toBaseLink(msg)
   void publishFilteredCloud(const PointCloud & cloud, const std_msgs::msg::Header & scan_header);
+  LocalMapParams loadLocalMapParams();
+  ScanMatcherParams loadScanMatcherParams();
+  Eigen::Isometry2d estimatePose(const PointCloud & scan);
 
   Preprocessor preprocessor_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
+
+    // Built in the constructor's initializer list, so keep them declared in this order.
+  LocalMap local_map_;
+  ScanMatcher scan_matcher_;
+  double scan_voxel_size_{};  // [m] coarse voxel for the scan that gets registered
+
+  Eigen::Isometry2d pose_ = Eigen::Isometry2d::Identity();         // odom -> base_link: start at the origin facing +x
+  Eigen::Isometry2d last_motion_ = Eigen::Isometry2d::Identity();  // motion between the last two scans: start still
 
   std::string base_frame_;
   double expected_period_s_;

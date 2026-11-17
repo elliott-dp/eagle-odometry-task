@@ -1,0 +1,35 @@
+lidar_odometry:
+  ros__parameters:
+    input_topic: /lidar/points
+    filtered_topic: /lidar_odometry/filtered_points
+    base_frame: base_link
+    input_queue_depth: 50
+    max_scan_gap_s: 0.15          # [s] scans come every 0.1 s, a longer gap means one was lost
+
+    crop:
+      min_range: 2.5              # [m] closer returns hit the car body, gotta tune it when have access to graphical rappresentation
+      max_range: 100.0            # [m] generous on purpose: far buildings constrain the yaw
+
+    ground:
+      band: 0.3                   # [m] ground candidates have |z| below this in base_link
+      fit_radius: 15.0            # [m] fit the plane only near the car, where the scan is dense
+      ransac_distance: 0.05       # [m] max distance from the plane to count as ground
+      ransac_max_iterations: 100
+      max_tilt_deg: 5.0           # [deg] steeper planes are walls, not the ground
+      min_inliers: 500            # fewer inliers than this and the plane is not trusted
+      clearance: 0.10             # [m] after levelling, drop everything lower than this
+
+    downsample:
+      scan_voxel_size: 0.5        # [m] coarse: the scan that gets registered, keeps ICP fast
+      map_voxel_size: 0.2         # [m] fine: what goes into the map, denser than any single scan
+
+    local_map:
+      max_scans: 20               # the map keeps only the last 20 scans (2 s of driving)
+      normal_neighbours: 10       # map points used to fit the plane behind each normal
+
+    registration:
+      max_iterations: 30
+      max_correspondence_distance: 1.0   # [m] pairs farther apart than this are dropped
+      robust_kernel_scale: 0.2           # [m] a pair with this residual gets half the weight
+      convergence_epsilon: 1.0e-4        # stop when the update (m and rad) is smaller than this
+      min_correspondences: 100           # fewer pairs than this and the result is not trusted

@@ -11,6 +11,8 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
+#include <pcl/filters/voxel_grid.h>
+
 namespace lidar_odometry {
 
 OdometryNode::OdometryNode()
@@ -144,6 +146,18 @@ PointCloud::Ptr Preprocessor::levelAndRemoveGround(
     }
   }
   return above_ground;
+}
+
+  PointCloud::Ptr voxelDownsample(const PointCloud::ConstPtr & cloud, double voxel_size)
+{
+  const auto size = static_cast<float>(voxel_size);
+  pcl::VoxelGrid<pcl::PointXYZ> grid;
+  grid.setInputCloud(cloud);
+  grid.setLeafSize(size, size, size);
+
+  auto downsampled = pcl::make_shared<PointCloud>();
+  grid.filter(*downsampled);
+  return downsampled;
 }
 
 }  // namespace lidar_odometry
