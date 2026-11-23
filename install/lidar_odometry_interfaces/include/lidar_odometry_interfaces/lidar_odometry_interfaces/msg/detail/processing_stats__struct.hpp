@@ -46,8 +46,13 @@ struct ProcessingStats_
     {
       this->input_points = 0ul;
       this->filtered_points = 0ul;
+      this->crop_ms = 0.0;
+      this->ground_ms = 0.0;
+      this->downsample_ms = 0.0;
       this->preprocessing_ms = 0.0;
       this->registration_ms = 0.0;
+      this->map_update_ms = 0.0;
+      this->publish_ms = 0.0;
       this->total_ms = 0.0;
     }
   }
@@ -60,8 +65,13 @@ struct ProcessingStats_
     {
       this->input_points = 0ul;
       this->filtered_points = 0ul;
+      this->crop_ms = 0.0;
+      this->ground_ms = 0.0;
+      this->downsample_ms = 0.0;
       this->preprocessing_ms = 0.0;
       this->registration_ms = 0.0;
+      this->map_update_ms = 0.0;
+      this->publish_ms = 0.0;
       this->total_ms = 0.0;
     }
   }
@@ -76,12 +86,27 @@ struct ProcessingStats_
   using _filtered_points_type =
     uint32_t;
   _filtered_points_type filtered_points;
+  using _crop_ms_type =
+    double;
+  _crop_ms_type crop_ms;
+  using _ground_ms_type =
+    double;
+  _ground_ms_type ground_ms;
+  using _downsample_ms_type =
+    double;
+  _downsample_ms_type downsample_ms;
   using _preprocessing_ms_type =
     double;
   _preprocessing_ms_type preprocessing_ms;
   using _registration_ms_type =
     double;
   _registration_ms_type registration_ms;
+  using _map_update_ms_type =
+    double;
+  _map_update_ms_type map_update_ms;
+  using _publish_ms_type =
+    double;
+  _publish_ms_type publish_ms;
   using _total_ms_type =
     double;
   _total_ms_type total_ms;
@@ -105,6 +130,24 @@ struct ProcessingStats_
     this->filtered_points = _arg;
     return *this;
   }
+  Type & set__crop_ms(
+    const double & _arg)
+  {
+    this->crop_ms = _arg;
+    return *this;
+  }
+  Type & set__ground_ms(
+    const double & _arg)
+  {
+    this->ground_ms = _arg;
+    return *this;
+  }
+  Type & set__downsample_ms(
+    const double & _arg)
+  {
+    this->downsample_ms = _arg;
+    return *this;
+  }
   Type & set__preprocessing_ms(
     const double & _arg)
   {
@@ -115,6 +158,18 @@ struct ProcessingStats_
     const double & _arg)
   {
     this->registration_ms = _arg;
+    return *this;
+  }
+  Type & set__map_update_ms(
+    const double & _arg)
+  {
+    this->map_update_ms = _arg;
+    return *this;
+  }
+  Type & set__publish_ms(
+    const double & _arg)
+  {
+    this->publish_ms = _arg;
     return *this;
   }
   Type & set__total_ms(
@@ -175,10 +230,25 @@ struct ProcessingStats_
     if (this->filtered_points != other.filtered_points) {
       return false;
     }
+    if (this->crop_ms != other.crop_ms) {
+      return false;
+    }
+    if (this->ground_ms != other.ground_ms) {
+      return false;
+    }
+    if (this->downsample_ms != other.downsample_ms) {
+      return false;
+    }
     if (this->preprocessing_ms != other.preprocessing_ms) {
       return false;
     }
     if (this->registration_ms != other.registration_ms) {
+      return false;
+    }
+    if (this->map_update_ms != other.map_update_ms) {
+      return false;
+    }
+    if (this->publish_ms != other.publish_ms) {
       return false;
     }
     if (this->total_ms != other.total_ms) {

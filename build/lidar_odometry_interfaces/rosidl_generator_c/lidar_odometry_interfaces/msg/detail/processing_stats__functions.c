@@ -28,8 +28,13 @@ lidar_odometry_interfaces__msg__ProcessingStats__init(lidar_odometry_interfaces_
   }
   // input_points
   // filtered_points
+  // crop_ms
+  // ground_ms
+  // downsample_ms
   // preprocessing_ms
   // registration_ms
+  // map_update_ms
+  // publish_ms
   // total_ms
   return true;
 }
@@ -44,8 +49,13 @@ lidar_odometry_interfaces__msg__ProcessingStats__fini(lidar_odometry_interfaces_
   std_msgs__msg__Header__fini(&msg->header);
   // input_points
   // filtered_points
+  // crop_ms
+  // ground_ms
+  // downsample_ms
   // preprocessing_ms
   // registration_ms
+  // map_update_ms
+  // publish_ms
   // total_ms
 }
 
@@ -69,12 +79,32 @@ lidar_odometry_interfaces__msg__ProcessingStats__are_equal(const lidar_odometry_
   if (lhs->filtered_points != rhs->filtered_points) {
     return false;
   }
+  // crop_ms
+  if (lhs->crop_ms != rhs->crop_ms) {
+    return false;
+  }
+  // ground_ms
+  if (lhs->ground_ms != rhs->ground_ms) {
+    return false;
+  }
+  // downsample_ms
+  if (lhs->downsample_ms != rhs->downsample_ms) {
+    return false;
+  }
   // preprocessing_ms
   if (lhs->preprocessing_ms != rhs->preprocessing_ms) {
     return false;
   }
   // registration_ms
   if (lhs->registration_ms != rhs->registration_ms) {
+    return false;
+  }
+  // map_update_ms
+  if (lhs->map_update_ms != rhs->map_update_ms) {
+    return false;
+  }
+  // publish_ms
+  if (lhs->publish_ms != rhs->publish_ms) {
     return false;
   }
   // total_ms
@@ -102,10 +132,20 @@ lidar_odometry_interfaces__msg__ProcessingStats__copy(
   output->input_points = input->input_points;
   // filtered_points
   output->filtered_points = input->filtered_points;
+  // crop_ms
+  output->crop_ms = input->crop_ms;
+  // ground_ms
+  output->ground_ms = input->ground_ms;
+  // downsample_ms
+  output->downsample_ms = input->downsample_ms;
   // preprocessing_ms
   output->preprocessing_ms = input->preprocessing_ms;
   // registration_ms
   output->registration_ms = input->registration_ms;
+  // map_update_ms
+  output->map_update_ms = input->map_update_ms;
+  // publish_ms
+  output->publish_ms = input->publish_ms;
   // total_ms
   output->total_ms = input->total_ms;
   return true;

@@ -50,6 +50,27 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: crop_ms
+  {
+    out << "crop_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.crop_ms, out);
+    out << ", ";
+  }
+
+  // member: ground_ms
+  {
+    out << "ground_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.ground_ms, out);
+    out << ", ";
+  }
+
+  // member: downsample_ms
+  {
+    out << "downsample_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.downsample_ms, out);
+    out << ", ";
+  }
+
   // member: preprocessing_ms
   {
     out << "preprocessing_ms: ";
@@ -61,6 +82,20 @@ inline void to_flow_style_yaml(
   {
     out << "registration_ms: ";
     rosidl_generator_traits::value_to_yaml(msg.registration_ms, out);
+    out << ", ";
+  }
+
+  // member: map_update_ms
+  {
+    out << "map_update_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.map_update_ms, out);
+    out << ", ";
+  }
+
+  // member: publish_ms
+  {
+    out << "publish_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.publish_ms, out);
     out << ", ";
   }
 
@@ -105,6 +140,36 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: crop_ms
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "crop_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.crop_ms, out);
+    out << "\n";
+  }
+
+  // member: ground_ms
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "ground_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.ground_ms, out);
+    out << "\n";
+  }
+
+  // member: downsample_ms
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "downsample_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.downsample_ms, out);
+    out << "\n";
+  }
+
   // member: preprocessing_ms
   {
     if (indentation > 0) {
@@ -122,6 +187,26 @@ inline void to_block_style_yaml(
     }
     out << "registration_ms: ";
     rosidl_generator_traits::value_to_yaml(msg.registration_ms, out);
+    out << "\n";
+  }
+
+  // member: map_update_ms
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "map_update_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.map_update_ms, out);
+    out << "\n";
+  }
+
+  // member: publish_ms
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "publish_ms: ";
+    rosidl_generator_traits::value_to_yaml(msg.publish_ms, out);
     out << "\n";
   }
 

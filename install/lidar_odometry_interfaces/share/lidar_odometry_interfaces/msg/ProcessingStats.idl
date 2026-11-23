@@ -19,9 +19,29 @@ module lidar_odometry_interfaces {
 
       uint32 filtered_points;
 
+      @verbatim (language="comment", text=
+        "conversion from ROS, NaN removal and range crop")
+      double crop_ms;
+
+      @verbatim (language="comment", text=
+        "transform to base_link, ground fit, levelling and ground removal")
+      double ground_ms;
+
+      @verbatim (language="comment", text=
+        "coarse and fine voxel grids")
+      double downsample_ms;
+
       double preprocessing_ms;
 
       double registration_ms;
+
+      @verbatim (language="comment", text=
+        "adding the fine cloud to the voxel map")
+      double map_update_ms;
+
+      @verbatim (language="comment", text=
+        "odometry, TF, markers, filtered cloud and map")
+      double publish_ms;
 
       double total_ms;
     };

@@ -64,8 +64,13 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
         '_header',
         '_input_points',
         '_filtered_points',
+        '_crop_ms',
+        '_ground_ms',
+        '_downsample_ms',
         '_preprocessing_ms',
         '_registration_ms',
+        '_map_update_ms',
+        '_publish_ms',
         '_total_ms',
     ]
 
@@ -73,8 +78,13 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
         'header': 'std_msgs/Header',
         'input_points': 'uint32',
         'filtered_points': 'uint32',
+        'crop_ms': 'double',
+        'ground_ms': 'double',
+        'downsample_ms': 'double',
         'preprocessing_ms': 'double',
         'registration_ms': 'double',
+        'map_update_ms': 'double',
+        'publish_ms': 'double',
         'total_ms': 'double',
     }
 
@@ -82,6 +92,11 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -95,8 +110,13 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
         self.header = kwargs.get('header', Header())
         self.input_points = kwargs.get('input_points', int())
         self.filtered_points = kwargs.get('filtered_points', int())
+        self.crop_ms = kwargs.get('crop_ms', float())
+        self.ground_ms = kwargs.get('ground_ms', float())
+        self.downsample_ms = kwargs.get('downsample_ms', float())
         self.preprocessing_ms = kwargs.get('preprocessing_ms', float())
         self.registration_ms = kwargs.get('registration_ms', float())
+        self.map_update_ms = kwargs.get('map_update_ms', float())
+        self.publish_ms = kwargs.get('publish_ms', float())
         self.total_ms = kwargs.get('total_ms', float())
 
     def __repr__(self):
@@ -134,9 +154,19 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
             return False
         if self.filtered_points != other.filtered_points:
             return False
+        if self.crop_ms != other.crop_ms:
+            return False
+        if self.ground_ms != other.ground_ms:
+            return False
+        if self.downsample_ms != other.downsample_ms:
+            return False
         if self.preprocessing_ms != other.preprocessing_ms:
             return False
         if self.registration_ms != other.registration_ms:
+            return False
+        if self.map_update_ms != other.map_update_ms:
+            return False
+        if self.publish_ms != other.publish_ms:
             return False
         if self.total_ms != other.total_ms:
             return False
@@ -192,6 +222,51 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
         self._filtered_points = value
 
     @builtins.property
+    def crop_ms(self):
+        """Message field 'crop_ms'."""
+        return self._crop_ms
+
+    @crop_ms.setter
+    def crop_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'crop_ms' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'crop_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._crop_ms = value
+
+    @builtins.property
+    def ground_ms(self):
+        """Message field 'ground_ms'."""
+        return self._ground_ms
+
+    @ground_ms.setter
+    def ground_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ground_ms' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'ground_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._ground_ms = value
+
+    @builtins.property
+    def downsample_ms(self):
+        """Message field 'downsample_ms'."""
+        return self._downsample_ms
+
+    @downsample_ms.setter
+    def downsample_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'downsample_ms' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'downsample_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._downsample_ms = value
+
+    @builtins.property
     def preprocessing_ms(self):
         """Message field 'preprocessing_ms'."""
         return self._preprocessing_ms
@@ -220,6 +295,36 @@ class ProcessingStats(metaclass=Metaclass_ProcessingStats):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'registration_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._registration_ms = value
+
+    @builtins.property
+    def map_update_ms(self):
+        """Message field 'map_update_ms'."""
+        return self._map_update_ms
+
+    @map_update_ms.setter
+    def map_update_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'map_update_ms' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'map_update_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._map_update_ms = value
+
+    @builtins.property
+    def publish_ms(self):
+        """Message field 'publish_ms'."""
+        return self._publish_ms
+
+    @publish_ms.setter
+    def publish_ms(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'publish_ms' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'publish_ms' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._publish_ms = value
 
     @builtins.property
     def total_ms(self):

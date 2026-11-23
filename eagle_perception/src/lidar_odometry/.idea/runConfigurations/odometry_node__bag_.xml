@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="odometry_node (bag)" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="--ros-args --params-file /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/eagle_perception/src/lidar_odometry/config/odometry.yaml -p use_sim_time:=true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lidar_odometry" TARGET_NAME="odometry_node" CONFIG_NAME="Debug-Docker" RUN_TARGET_PROJECT_NAME="lidar_odometry" RUN_TARGET_NAME="odometry_node">
+    <envs>
+      <env name="LD_LIBRARY_PATH" value="/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu" />
+    </envs>
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -83,6 +83,33 @@ bool lidar_odometry_interfaces__msg__processing_stats__convert_from_py(PyObject 
     ros_message->filtered_points = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // crop_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "crop_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->crop_ms = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ground_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ground_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ground_ms = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // downsample_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "downsample_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->downsample_ms = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // preprocessing_ms
     PyObject * field = PyObject_GetAttrString(_pymsg, "preprocessing_ms");
     if (!field) {
@@ -99,6 +126,24 @@ bool lidar_odometry_interfaces__msg__processing_stats__convert_from_py(PyObject 
     }
     assert(PyFloat_Check(field));
     ros_message->registration_ms = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // map_update_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "map_update_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->map_update_ms = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // publish_ms
+    PyObject * field = PyObject_GetAttrString(_pymsg, "publish_ms");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->publish_ms = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // total_ms
@@ -168,6 +213,39 @@ PyObject * lidar_odometry_interfaces__msg__processing_stats__convert_to_py(void 
       }
     }
   }
+  {  // crop_ms
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->crop_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "crop_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ground_ms
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ground_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ground_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // downsample_ms
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->downsample_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "downsample_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // preprocessing_ms
     PyObject * field = NULL;
     field = PyFloat_FromDouble(ros_message->preprocessing_ms);
@@ -184,6 +262,28 @@ PyObject * lidar_odometry_interfaces__msg__processing_stats__convert_to_py(void 
     field = PyFloat_FromDouble(ros_message->registration_ms);
     {
       int rc = PyObject_SetAttrString(_pymessage, "registration_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // map_update_ms
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->map_update_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "map_update_ms", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // publish_ms
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->publish_ms);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "publish_ms", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

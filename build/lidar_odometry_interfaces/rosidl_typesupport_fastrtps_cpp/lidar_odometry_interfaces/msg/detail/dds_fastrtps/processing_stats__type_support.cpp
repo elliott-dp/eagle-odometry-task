@@ -64,10 +64,20 @@ cdr_serialize(
   cdr << ros_message.input_points;
   // Member: filtered_points
   cdr << ros_message.filtered_points;
+  // Member: crop_ms
+  cdr << ros_message.crop_ms;
+  // Member: ground_ms
+  cdr << ros_message.ground_ms;
+  // Member: downsample_ms
+  cdr << ros_message.downsample_ms;
   // Member: preprocessing_ms
   cdr << ros_message.preprocessing_ms;
   // Member: registration_ms
   cdr << ros_message.registration_ms;
+  // Member: map_update_ms
+  cdr << ros_message.map_update_ms;
+  // Member: publish_ms
+  cdr << ros_message.publish_ms;
   // Member: total_ms
   cdr << ros_message.total_ms;
   return true;
@@ -89,11 +99,26 @@ cdr_deserialize(
   // Member: filtered_points
   cdr >> ros_message.filtered_points;
 
+  // Member: crop_ms
+  cdr >> ros_message.crop_ms;
+
+  // Member: ground_ms
+  cdr >> ros_message.ground_ms;
+
+  // Member: downsample_ms
+  cdr >> ros_message.downsample_ms;
+
   // Member: preprocessing_ms
   cdr >> ros_message.preprocessing_ms;
 
   // Member: registration_ms
   cdr >> ros_message.registration_ms;
+
+  // Member: map_update_ms
+  cdr >> ros_message.map_update_ms;
+
+  // Member: publish_ms
+  cdr >> ros_message.publish_ms;
 
   // Member: total_ms
   cdr >> ros_message.total_ms;
@@ -131,6 +156,24 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: crop_ms
+  {
+    size_t item_size = sizeof(ros_message.crop_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: ground_ms
+  {
+    size_t item_size = sizeof(ros_message.ground_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: downsample_ms
+  {
+    size_t item_size = sizeof(ros_message.downsample_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: preprocessing_ms
   {
     size_t item_size = sizeof(ros_message.preprocessing_ms);
@@ -140,6 +183,18 @@ get_serialized_size(
   // Member: registration_ms
   {
     size_t item_size = sizeof(ros_message.registration_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: map_update_ms
+  {
+    size_t item_size = sizeof(ros_message.map_update_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: publish_ms
+  {
+    size_t item_size = sizeof(ros_message.publish_ms);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -210,6 +265,33 @@ max_serialized_size_ProcessingStats(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: crop_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: ground_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: downsample_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
   // Member: preprocessing_ms
   {
     size_t array_size = 1;
@@ -220,6 +302,24 @@ max_serialized_size_ProcessingStats(
   }
 
   // Member: registration_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: map_update_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: publish_ms
   {
     size_t array_size = 1;
 

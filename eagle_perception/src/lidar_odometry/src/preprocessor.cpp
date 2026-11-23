@@ -14,35 +14,7 @@
 #include <pcl/filters/voxel_grid.h>
 
 namespace lidar_odometry {
-
-OdometryNode::OdometryNode()
-: rclcpp::Node("lidar_odometry"),
-  preprocessor_(loadPreprocessorParams())
-{
-  // Existing: topic, frame and queue settings
-  const auto input_topic = declare_parameter<std::string>("input_topic", "/lidar/points");
-  base_frame_ = declare_parameter<std::string>("base_frame", "base_link");
-  expected_period_s_ = declare_parameter<double>("expected_scan_period_s", 0.1);
-  const auto queue_depth = declare_parameter<int>("input_queue_depth", 50);
-
-  // Existing: TF listener, used once to read the static sensor transform
-  tf_buffer_ = std::make_unique<tf2_ros::Buffer>(get_clock());
-  tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
-
-  // New: publisher for the cropped, levelled scan without ground
-  const auto filtered_topic = declare_parameter<std::string>("filtered_topic");
-  filtered_pub_ = create_publisher<sensor_msgs::msg::PointCloud2>(filtered_topic, 10);
-
-  // Existing: reliable subscription, with best effort most of these big scans would be lost
-  const auto qos = rclcpp::QoS(rclcpp::KeepLast(static_cast<size_t>(queue_depth))).reliable();
-  scan_sub_ = create_subscription<sensor_msgs::msg::PointCloud2>(
-    input_topic, qos,
-    [this](sensor_msgs::msg::PointCloud2::ConstSharedPtr msg) { onScan(msg); });
-
-  RCLCPP_INFO(get_logger(), "Listening on %s, publishing the filtered scan on %s",
-              input_topic.c_str(), filtered_topic.c_str());
-}
-
+  
 Preprocessor::Preprocessor(const PreprocessorParams & params) : params_(params) {}
 
 PointCloud::Ptr Preprocessor::cropByRange(const PointCloud & sensor_cloud) const

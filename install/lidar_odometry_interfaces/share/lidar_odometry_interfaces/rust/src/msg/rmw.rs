@@ -34,6 +34,15 @@ pub struct ProcessingStats {
     #[allow(missing_docs)]
     pub filtered_points: u32,
 
+    /// conversion from ROS, NaN removal and range crop
+    pub crop_ms: f64,
+
+    /// transform to base_link, ground fit, levelling and ground removal
+    pub ground_ms: f64,
+
+    /// coarse and fine voxel grids
+    pub downsample_ms: f64,
+
 
     // This member is not documented.
     #[allow(missing_docs)]
@@ -43,6 +52,12 @@ pub struct ProcessingStats {
     // This member is not documented.
     #[allow(missing_docs)]
     pub registration_ms: f64,
+
+    /// adding the fine cloud to the voxel map
+    pub map_update_ms: f64,
+
+    /// odometry, TF, markers, filtered cloud and map
+    pub publish_ms: f64,
 
 
     // This member is not documented.

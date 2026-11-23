@@ -1,0 +1,174 @@
+Panels:
+# Views is left out so the 3D view gets the width; add it back from the Panels menu.
+  - Class: rviz_common/Displays
+    Name: Displays
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: Raw scan
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 5
+      Plane Cell Count: 40
+      Reference Frame: <Fixed Frame>
+      Color: 160; 160; 164
+      Alpha: 0.3
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Marker Scale: 3
+      Value: true
+    # The scan as recorded, in the lidar frame. Grey and faint: it is the reference.
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Raw scan
+      Enabled: true
+      Topic:
+        Value: /lidar/points
+        Depth: 5
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: FlatColor
+      Color: 170; 170; 170
+      Alpha: 0.4
+      Decay Time: 0
+      Position Transformer: XYZ
+      Use Fixed Frame: true
+      Value: true
+    # What survives cropping and ground removal: the points the scan matcher uses.
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Filtered scan
+      Enabled: true
+      Topic:
+        Value: /lidar_odometry/filtered_points
+        Depth: 5
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Style: Points
+      Size (Pixels): 3
+      Color Transformer: FlatColor
+      Color: 255; 140; 0
+      Alpha: 1
+      Decay Time: 0
+      Position Transformer: XYZ
+      Use Fixed Frame: true
+      Value: true
+    # The local map. The node publishes it transient local, so the QoS here must match.
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Local map
+      Enabled: true
+      Topic:
+        Value: /lidar_odometry/map
+        Depth: 1
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: AxisColor
+      Axis: Z
+      Alpha: 0.6
+      Decay Time: 0
+      Position Transformer: XYZ
+      Use Fixed Frame: true
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Trajectory
+      Enabled: true
+      Topic:
+        Value: /lidar_odometry/trajectory
+        Depth: 5
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Value: true
+    - Class: rviz_default_plugins/Odometry
+      Name: Odometry
+      Enabled: true
+      Topic:
+        Value: /odometry
+        Depth: 5
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Keep: 1
+      Position Tolerance: 0.1
+      Angle Tolerance: 0.1
+      Shape:
+        Value: Arrow
+        Color: 0; 200; 255
+        Alpha: 1
+        Shaft Length: 3
+        Shaft Radius: 0.3
+        Head Length: 1
+        Head Radius: 0.6
+      Covariance:
+        Value: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 40; 40; 44
+    # odom is fixed to the world: the map stays put and the car drives through it.
+    # Switch to base_link to check the preprocessing scan by scan.
+    Fixed Frame: odom
+    # Rendering is software-only and every frame is copied to XQuartz, so 15 fps is plenty.
+    Frame Rate: 15
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Current View
+      # The camera follows the car.
+      Target Frame: base_link
+      Distance: 70
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Near Clip Distance: 0.01
+      Pitch: 0.9
+      Yaw: 3.6
+      Value: Orbit (rviz)
+    Saved: ~
+# Fills the Xephyr screen that tools/rviz.sh opens (1400x820). There is no window manager in
+# there, so the window cannot be moved or resized: change both numbers together.
+# The QMainWindow State is RViz's own default layout (rviz_common/default.rviz): Displays on the
+# left, Time along the bottom. Without it every panel stacks on the left.
+Window Geometry:
+  Displays:
+    collapsed: false
+  Time:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000013c0000025ffc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000410000025f000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f0000025ffc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007301000000410000025f000000b000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000028900fffffffb0000000800540069006d00650100000000000004500000000000000000000001eb0000025f00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  X: 0
+  Y: 0
+  Height: 820
+  Width: 1400

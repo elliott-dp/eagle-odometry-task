@@ -359,16 +359,16 @@
 			"id" : "lidar_odometry_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df"
 		},
 		{
+			"backtrace" : 7,
+			"id" : "lidar_odometry_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 17,
 			"id" : "lidar_odometry_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 18,
 			"id" : "lidar_odometry_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 7,
-			"id" : "lidar_odometry_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 18,

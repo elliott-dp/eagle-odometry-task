@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Odometry + bag + RViz" type="CompoundRunConfigurationType">
+    <toRun name="rviz" type="ShConfigurationType" />
+    <toRun name="odometry_node (bag)" type="CMakeRunConfiguration" />
+    <toRun name="bag (after node starts)" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

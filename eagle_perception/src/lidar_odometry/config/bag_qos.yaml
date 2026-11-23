@@ -1,0 +1,9 @@
+# QoS override for `ros2 bag play --qos-profile-overrides-path`.
+# The bag was recorded with a history depth of 5. A scan is ~640 KB, and with only 5 slots
+# the player overwrites scans that have not been delivered yet whenever the CPU is busy,
+# so the node sees gaps of up to seconds. 100 slots = 10 s of scans.
+/lidar/points:
+  history: keep_last
+  depth: 100
+  reliability: reliable
+  durability: volatile

@@ -20,6 +20,15 @@ pub struct ProcessingStats {
     #[allow(missing_docs)]
     pub filtered_points: u32,
 
+    /// conversion from ROS, NaN removal and range crop
+    pub crop_ms: f64,
+
+    /// transform to base_link, ground fit, levelling and ground removal
+    pub ground_ms: f64,
+
+    /// coarse and fine voxel grids
+    pub downsample_ms: f64,
+
 
     // This member is not documented.
     #[allow(missing_docs)]
@@ -29,6 +38,12 @@ pub struct ProcessingStats {
     // This member is not documented.
     #[allow(missing_docs)]
     pub registration_ms: f64,
+
+    /// adding the fine cloud to the voxel map
+    pub map_update_ms: f64,
+
+    /// odometry, TF, markers, filtered cloud and map
+    pub publish_ms: f64,
 
 
     // This member is not documented.
@@ -54,16 +69,26 @@ impl rosidl_runtime_rs::Message for ProcessingStats {
         header: std_msgs::msg::Header::into_rmw_message(std::borrow::Cow::Owned(msg.header)).into_owned(),
         input_points: msg.input_points,
         filtered_points: msg.filtered_points,
+        crop_ms: msg.crop_ms,
+        ground_ms: msg.ground_ms,
+        downsample_ms: msg.downsample_ms,
         preprocessing_ms: msg.preprocessing_ms,
         registration_ms: msg.registration_ms,
+        map_update_ms: msg.map_update_ms,
+        publish_ms: msg.publish_ms,
         total_ms: msg.total_ms,
       }),
       std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
         header: std_msgs::msg::Header::into_rmw_message(std::borrow::Cow::Borrowed(&msg.header)).into_owned(),
       input_points: msg.input_points,
       filtered_points: msg.filtered_points,
+      crop_ms: msg.crop_ms,
+      ground_ms: msg.ground_ms,
+      downsample_ms: msg.downsample_ms,
       preprocessing_ms: msg.preprocessing_ms,
       registration_ms: msg.registration_ms,
+      map_update_ms: msg.map_update_ms,
+      publish_ms: msg.publish_ms,
       total_ms: msg.total_ms,
       })
     }
@@ -74,8 +99,13 @@ impl rosidl_runtime_rs::Message for ProcessingStats {
       header: std_msgs::msg::Header::from_rmw_message(msg.header),
       input_points: msg.input_points,
       filtered_points: msg.filtered_points,
+      crop_ms: msg.crop_ms,
+      ground_ms: msg.ground_ms,
+      downsample_ms: msg.downsample_ms,
       preprocessing_ms: msg.preprocessing_ms,
       registration_ms: msg.registration_ms,
+      map_update_ms: msg.map_update_ms,
+      publish_ms: msg.publish_ms,
       total_ms: msg.total_ms,
     }
   }

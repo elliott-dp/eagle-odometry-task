@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         ros-humble-tf2-tools \
         ros-humble-rqt-graph \
         ros-humble-rqt-reconfigure \
+        xserver-xephyr \
         sudo \
     && rm -rf /var/lib/apt/lists/*
 

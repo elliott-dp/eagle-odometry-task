@@ -23,6 +23,15 @@ inline double yawOf(const Eigen::Isometry2d & pose)
   return std::atan2(pose.linear()(1, 0), pose.linear()(0, 0));
 }
 
+// The same pose in 3D, on the ground (z = 0) and level (no roll, no pitch). Used for ROS messages.
+inline Eigen::Isometry3d to3D(const Eigen::Isometry2d & pose)
+{
+  Eigen::Isometry3d pose_3d = Eigen::Isometry3d::Identity();
+  pose_3d.translation() = Eigen::Vector3d(pose.translation().x(), pose.translation().y(), 0.0);
+  pose_3d.linear() = Eigen::AngleAxisd(yawOf(pose), Eigen::Vector3d::UnitZ()).toRotationMatrix();
+  return pose_3d;
+}
+
 // p' = R(yaw) * p + t. Only x and y change: the scan is already levelled,
 // so the height of a point is the same in every frame.
 inline Eigen::Vector3d transformPoint(const Eigen::Isometry2d & pose, const pcl::PointXYZ & p)

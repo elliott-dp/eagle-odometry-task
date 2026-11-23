@@ -32,8 +32,18 @@ typedef struct lidar_odometry_interfaces__msg__ProcessingStats
   /// how many points in the raw scan
   uint32_t input_points;
   uint32_t filtered_points;
+  /// conversion from ROS, NaN removal and range crop
+  double crop_ms;
+  /// transform to base_link, ground fit, levelling and ground removal
+  double ground_ms;
+  /// coarse and fine voxel grids
+  double downsample_ms;
   double preprocessing_ms;
   double registration_ms;
+  /// adding the fine cloud to the voxel map
+  double map_update_ms;
+  /// odometry, TF, markers, filtered cloud and map
+  double publish_ms;
   double total_ms;
 } lidar_odometry_interfaces__msg__ProcessingStats;
 

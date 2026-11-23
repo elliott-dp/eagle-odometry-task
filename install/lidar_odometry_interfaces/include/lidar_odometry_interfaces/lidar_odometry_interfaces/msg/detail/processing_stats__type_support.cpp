@@ -37,7 +37,7 @@ void ProcessingStats_fini_function(void * message_memory)
   typed_message->~ProcessingStats();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ProcessingStats_message_member_array[6] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ProcessingStats_message_member_array[11] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -90,6 +90,57 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ProcessingSta
     nullptr  // resize(index) function pointer
   },
   {
+    "crop_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lidar_odometry_interfaces::msg::ProcessingStats, crop_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "ground_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lidar_odometry_interfaces::msg::ProcessingStats, ground_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "downsample_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lidar_odometry_interfaces::msg::ProcessingStats, downsample_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "preprocessing_ms",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
@@ -124,6 +175,40 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ProcessingSta
     nullptr  // resize(index) function pointer
   },
   {
+    "map_update_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lidar_odometry_interfaces::msg::ProcessingStats, map_update_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "publish_ms",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lidar_odometry_interfaces::msg::ProcessingStats, publish_ms),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "total_ms",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
@@ -145,7 +230,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ProcessingSta
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ProcessingStats_message_members = {
   "lidar_odometry_interfaces::msg",  // message namespace
   "ProcessingStats",  // message name
-  6,  // number of fields
+  11,  // number of fields
   sizeof(lidar_odometry_interfaces::msg::ProcessingStats),
   ProcessingStats_message_member_array,  // message members
   ProcessingStats_init_function,  // function to initialize message memory (memory has to be allocated)

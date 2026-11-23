@@ -5,6 +5,12 @@ lidar_odometry:
     base_frame: base_link
     input_queue_depth: 50
     max_scan_gap_s: 0.15          # [s] scans come every 0.1 s, a longer gap means one was lost
+    odom_frame: odom
+    odometry_topic: /odometry
+    trajectory_topic: /lidar_odometry/trajectory
+    processing_time_topic: /lidar_odometry/processing_time
+    map_topic: /lidar_odometry/map
+    map_publish_every_n_scans: 10 # the full map is big: publish it once a second (0 = never)
 
     crop:
       min_range: 2.5              # [m] closer returns hit the car body, gotta tune it when have access to graphical rappresentation
@@ -24,7 +30,8 @@ lidar_odometry:
       map_voxel_size: 0.2         # [m] fine: what goes into the map, denser than any single scan
 
     local_map:
-      max_scans: 20               # the map keeps only the last 20 scans (2 s of driving)
+      voxel_size: 1.0             # [m] must be >= registration.max_correspondence_distance
+      max_points_per_voxel: 20    # a full voxel keeps its old points: no expiry, implicit loop closure
       normal_neighbours: 10       # map points used to fit the plane behind each normal
 
     registration:

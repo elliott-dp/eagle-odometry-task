@@ -3,7 +3,7 @@
 <package format="3">
   <name>lidar_odometry_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Messages of the lidar odometry package</description>
   <maintainer email="dev@todo.todo">dev</maintainer>
   <license>free per il popolo</license>
 

@@ -88,6 +88,21 @@ static bool _ProcessingStats__cdr_serialize(
     cdr << ros_message->filtered_points;
   }
 
+  // Field name: crop_ms
+  {
+    cdr << ros_message->crop_ms;
+  }
+
+  // Field name: ground_ms
+  {
+    cdr << ros_message->ground_ms;
+  }
+
+  // Field name: downsample_ms
+  {
+    cdr << ros_message->downsample_ms;
+  }
+
   // Field name: preprocessing_ms
   {
     cdr << ros_message->preprocessing_ms;
@@ -96,6 +111,16 @@ static bool _ProcessingStats__cdr_serialize(
   // Field name: registration_ms
   {
     cdr << ros_message->registration_ms;
+  }
+
+  // Field name: map_update_ms
+  {
+    cdr << ros_message->map_update_ms;
+  }
+
+  // Field name: publish_ms
+  {
+    cdr << ros_message->publish_ms;
   }
 
   // Field name: total_ms
@@ -139,6 +164,21 @@ static bool _ProcessingStats__cdr_deserialize(
     cdr >> ros_message->filtered_points;
   }
 
+  // Field name: crop_ms
+  {
+    cdr >> ros_message->crop_ms;
+  }
+
+  // Field name: ground_ms
+  {
+    cdr >> ros_message->ground_ms;
+  }
+
+  // Field name: downsample_ms
+  {
+    cdr >> ros_message->downsample_ms;
+  }
+
   // Field name: preprocessing_ms
   {
     cdr >> ros_message->preprocessing_ms;
@@ -147,6 +187,16 @@ static bool _ProcessingStats__cdr_deserialize(
   // Field name: registration_ms
   {
     cdr >> ros_message->registration_ms;
+  }
+
+  // Field name: map_update_ms
+  {
+    cdr >> ros_message->map_update_ms;
+  }
+
+  // Field name: publish_ms
+  {
+    cdr >> ros_message->publish_ms;
   }
 
   // Field name: total_ms
@@ -187,6 +237,24 @@ size_t get_serialized_size_lidar_odometry_interfaces__msg__ProcessingStats(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name crop_ms
+  {
+    size_t item_size = sizeof(ros_message->crop_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ground_ms
+  {
+    size_t item_size = sizeof(ros_message->ground_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name downsample_ms
+  {
+    size_t item_size = sizeof(ros_message->downsample_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name preprocessing_ms
   {
     size_t item_size = sizeof(ros_message->preprocessing_ms);
@@ -196,6 +264,18 @@ size_t get_serialized_size_lidar_odometry_interfaces__msg__ProcessingStats(
   // field.name registration_ms
   {
     size_t item_size = sizeof(ros_message->registration_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name map_update_ms
+  {
+    size_t item_size = sizeof(ros_message->map_update_ms);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name publish_ms
+  {
+    size_t item_size = sizeof(ros_message->publish_ms);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -269,6 +349,30 @@ size_t max_serialized_size_lidar_odometry_interfaces__msg__ProcessingStats(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: crop_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: ground_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: downsample_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
   // member: preprocessing_ms
   {
     size_t array_size = 1;
@@ -278,6 +382,22 @@ size_t max_serialized_size_lidar_odometry_interfaces__msg__ProcessingStats(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: registration_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: map_update_ms
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: publish_ms
   {
     size_t array_size = 1;
 

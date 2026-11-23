@@ -1,0 +1,793 @@
+[0.000000] (-) TimerEvent: {}
+[0.012055] (-) JobUnselected: {'identifier': 'lidar_odometry'}
+[0.015938] (lidar_odometry_interfaces) JobQueued: {'identifier': 'lidar_odometry_interfaces', 'dependencies': OrderedDict()}
+[0.029473] (lidar_odometry_interfaces) JobStarted: {'identifier': 'lidar_odometry_interfaces'}
+[0.087881] (-) TimerEvent: {}
+[0.226875] (-) TimerEvent: {}
+[0.392011] (-) TimerEvent: {}
+[0.409702] (lidar_odometry_interfaces) JobProgress: {'identifier': 'lidar_odometry_interfaces', 'progress': 'cmake'}
+[0.493036] (-) TimerEvent: {}
+[0.723763] (-) TimerEvent: {}
+[0.761056] (lidar_odometry_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/eagle_perception/src/lidar_odometry_interfaces', '-DCMAKE_INSTALL_PREFIX=/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces'], 'cwd': '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces', 'env': OrderedDict([('HOSTNAME', '452820fbf51f'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu'), ('HOME', '/home/eagle'), ('OLDPWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.825256] (-) TimerEvent: {}
+[0.945452] (-) TimerEvent: {}
+[1.057337] (-) TimerEvent: {}
+[1.164289] (-) TimerEvent: {}
+[1.270194] (-) TimerEvent: {}
+[1.302099] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.372437] (-) TimerEvent: {}
+[1.480981] (-) TimerEvent: {}
+[1.587331] (-) TimerEvent: {}
+[1.689108] (-) TimerEvent: {}
+[1.789982] (-) TimerEvent: {}
+[1.893528] (-) TimerEvent: {}
+[2.018254] (-) TimerEvent: {}
+[2.123348] (-) TimerEvent: {}
+[2.228775] (-) TimerEvent: {}
+[2.352949] (-) TimerEvent: {}
+[2.489326] (-) TimerEvent: {}
+[2.591959] (-) TimerEvent: {}
+[2.695269] (-) TimerEvent: {}
+[2.800925] (-) TimerEvent: {}
+[2.906908] (-) TimerEvent: {}
+[2.955850] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.008192] (-) TimerEvent: {}
+[3.110227] (-) TimerEvent: {}
+[3.231923] (-) TimerEvent: {}
+[3.339657] (-) TimerEvent: {}
+[3.486563] (-) TimerEvent: {}
+[3.608560] (-) TimerEvent: {}
+[3.712291] (-) TimerEvent: {}
+[3.880690] (-) TimerEvent: {}
+[3.985178] (-) TimerEvent: {}
+[3.991183] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.086124] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.108951] (-) TimerEvent: {}
+[4.169205] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.210108] (-) TimerEvent: {}
+[4.314693] (-) TimerEvent: {}
+[4.419443] (-) TimerEvent: {}
+[4.525829] (-) TimerEvent: {}
+[4.643333] (-) TimerEvent: {}
+[4.706958] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.742840] (-) TimerEvent: {}
+[4.856558] (-) TimerEvent: {}
+[5.010927] (-) TimerEvent: {}
+[5.819950] (-) TimerEvent: {}
+[6.143231] (-) TimerEvent: {}
+[6.268695] (-) TimerEvent: {}
+[6.437475] (-) TimerEvent: {}
+[6.553043] (-) TimerEvent: {}
+[6.674162] (-) TimerEvent: {}
+[6.829161] (-) TimerEvent: {}
+[6.941234] (-) TimerEvent: {}
+[7.049544] (-) TimerEvent: {}
+[7.191970] (-) TimerEvent: {}
+[7.383483] (-) TimerEvent: {}
+[7.547899] (-) TimerEvent: {}
+[7.657387] (-) TimerEvent: {}
+[7.875490] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[7.919002] (-) TimerEvent: {}
+[8.048304] (-) TimerEvent: {}
+[8.276396] (-) TimerEvent: {}
+[8.590258] (-) TimerEvent: {}
+[8.781928] (-) TimerEvent: {}
+[9.177142] (-) TimerEvent: {}
+[9.587651] (-) TimerEvent: {}
+[9.945638] (-) TimerEvent: {}
+[10.147004] (-) TimerEvent: {}
+[10.333737] (-) TimerEvent: {}
+[10.441143] (-) TimerEvent: {}
+[10.562317] (-) TimerEvent: {}
+[10.694124] (-) TimerEvent: {}
+[10.874000] (-) TimerEvent: {}
+[11.034834] (-) TimerEvent: {}
+[11.144909] (-) TimerEvent: {}
+[11.256326] (-) TimerEvent: {}
+[11.384511] (-) TimerEvent: {}
+[11.489795] (-) TimerEvent: {}
+[11.610216] (-) TimerEvent: {}
+[11.761700] (-) TimerEvent: {}
+[11.873698] (-) TimerEvent: {}
+[12.055587] (-) TimerEvent: {}
+[12.218319] (-) TimerEvent: {}
+[12.447507] (-) TimerEvent: {}
+[12.901170] (-) TimerEvent: {}
+[13.118041] (-) TimerEvent: {}
+[13.282964] (-) TimerEvent: {}
+[13.396769] (-) TimerEvent: {}
+[13.548785] (-) TimerEvent: {}
+[13.671800] (-) TimerEvent: {}
+[13.790050] (-) TimerEvent: {}
+[14.012365] (-) TimerEvent: {}
+[14.200839] (-) TimerEvent: {}
+[14.394144] (-) TimerEvent: {}
+[14.543987] (-) TimerEvent: {}
+[14.683078] (-) TimerEvent: {}
+[14.936396] (-) TimerEvent: {}
+[15.043226] (-) TimerEvent: {}
+[15.173028] (-) TimerEvent: {}
+[15.337346] (-) TimerEvent: {}
+[15.441176] (-) TimerEvent: {}
+[15.557225] (-) TimerEvent: {}
+[15.751081] (-) TimerEvent: {}
+[16.076004] (-) TimerEvent: {}
+[16.178925] (-) TimerEvent: {}
+[16.294505] (-) TimerEvent: {}
+[16.442560] (-) TimerEvent: {}
+[17.980819] (-) TimerEvent: {}
+[18.709451] (-) TimerEvent: {}
+[18.949230] (-) TimerEvent: {}
+[19.068395] (-) TimerEvent: {}
+[19.189821] (-) TimerEvent: {}
+[19.427385] (-) TimerEvent: {}
+[19.579957] (-) TimerEvent: {}
+[19.720232] (-) TimerEvent: {}
+[19.834410] (-) TimerEvent: {}
+[20.261976] (-) TimerEvent: {}
+[20.640370] (-) TimerEvent: {}
+[21.001270] (-) TimerEvent: {}
+[21.192316] (-) TimerEvent: {}
+[21.439350] (-) TimerEvent: {}
+[21.882561] (-) TimerEvent: {}
+[22.075695] (-) TimerEvent: {}
+[22.359671] (-) TimerEvent: {}
+[22.489964] (-) TimerEvent: {}
+[22.598410] (-) TimerEvent: {}
+[22.939074] (-) TimerEvent: {}
+[23.086184] (-) TimerEvent: {}
+[23.189946] (-) TimerEvent: {}
+[23.353319] (-) TimerEvent: {}
+[23.454998] (-) TimerEvent: {}
+[23.569446] (-) TimerEvent: {}
+[23.725921] (-) TimerEvent: {}
+[23.848225] (-) TimerEvent: {}
+[24.075705] (-) TimerEvent: {}
+[24.208817] (-) TimerEvent: {}
+[24.590149] (-) TimerEvent: {}
+[24.711792] (-) TimerEvent: {}
+[24.826105] (-) TimerEvent: {}
+[24.969235] (-) TimerEvent: {}
+[25.106880] (-) TimerEvent: {}
+[25.240864] (-) TimerEvent: {}
+[25.424881] (-) TimerEvent: {}
+[25.532043] (-) TimerEvent: {}
+[25.687556] (-) TimerEvent: {}
+[25.829408] (-) TimerEvent: {}
+[25.939049] (-) TimerEvent: {}
+[26.042684] (-) TimerEvent: {}
+[26.181976] (-) TimerEvent: {}
+[26.303973] (-) TimerEvent: {}
+[26.411079] (-) TimerEvent: {}
+[26.547394] (-) TimerEvent: {}
+[26.655076] (-) TimerEvent: {}
+[26.799958] (-) TimerEvent: {}
+[26.956464] (-) TimerEvent: {}
+[27.120454] (-) TimerEvent: {}
+[27.224071] (-) TimerEvent: {}
+[27.360524] (-) TimerEvent: {}
+[27.450326] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[27.564135] (-) TimerEvent: {}
+[27.667875] (-) TimerEvent: {}
+[27.774863] (-) TimerEvent: {}
+[27.891555] (-) TimerEvent: {}
+[27.996911] (-) TimerEvent: {}
+[28.099681] (-) TimerEvent: {}
+[28.225889] (-) TimerEvent: {}
+[28.350946] (-) TimerEvent: {}
+[28.457178] (-) TimerEvent: {}
+[28.559201] (-) TimerEvent: {}
+[28.669428] (-) TimerEvent: {}
+[28.771197] (-) TimerEvent: {}
+[28.873762] (-) TimerEvent: {}
+[28.991479] (-) TimerEvent: {}
+[29.142910] (-) TimerEvent: {}
+[29.339947] (-) TimerEvent: {}
+[29.501544] (-) TimerEvent: {}
+[29.630109] (-) TimerEvent: {}
+[29.735031] (-) TimerEvent: {}
+[29.847594] (-) TimerEvent: {}
+[29.962861] (-) TimerEvent: {}
+[30.093093] (-) TimerEvent: {}
+[30.197218] (-) TimerEvent: {}
+[30.344340] (-) TimerEvent: {}
+[30.449874] (-) TimerEvent: {}
+[30.553329] (-) TimerEvent: {}
+[30.663320] (-) TimerEvent: {}
+[30.783178] (-) TimerEvent: {}
+[30.889285] (-) TimerEvent: {}
+[31.113311] (-) TimerEvent: {}
+[31.559765] (-) TimerEvent: {}
+[31.760398] (-) TimerEvent: {}
+[31.893539] (-) TimerEvent: {}
+[31.995321] (-) TimerEvent: {}
+[32.104383] (-) TimerEvent: {}
+[32.206135] (-) TimerEvent: {}
+[32.313631] (-) TimerEvent: {}
+[32.416422] (-) TimerEvent: {}
+[32.521365] (-) TimerEvent: {}
+[32.625548] (-) TimerEvent: {}
+[32.767041] (-) TimerEvent: {}
+[32.878335] (-) TimerEvent: {}
+[32.992267] (-) TimerEvent: {}
+[33.098956] (-) TimerEvent: {}
+[33.205791] (-) TimerEvent: {}
+[33.319940] (-) TimerEvent: {}
+[33.471307] (-) TimerEvent: {}
+[33.574913] (-) TimerEvent: {}
+[33.726078] (-) TimerEvent: {}
+[33.841029] (-) TimerEvent: {}
+[33.903990] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[34.002167] (-) TimerEvent: {}
+[34.106483] (-) TimerEvent: {}
+[34.213126] (-) TimerEvent: {}
+[34.327530] (-) TimerEvent: {}
+[34.431536] (-) TimerEvent: {}
+[34.549623] (-) TimerEvent: {}
+[34.659479] (-) TimerEvent: {}
+[34.765103] (-) TimerEvent: {}
+[34.867241] (-) TimerEvent: {}
+[34.969212] (-) TimerEvent: {}
+[35.075890] (-) TimerEvent: {}
+[35.221663] (-) TimerEvent: {}
+[35.328508] (-) TimerEvent: {}
+[35.431421] (-) TimerEvent: {}
+[35.542202] (-) TimerEvent: {}
+[35.656948] (-) TimerEvent: {}
+[35.759445] (-) TimerEvent: {}
+[35.869120] (-) TimerEvent: {}
+[35.971097] (-) TimerEvent: {}
+[36.091502] (-) TimerEvent: {}
+[36.195428] (-) TimerEvent: {}
+[36.296902] (-) TimerEvent: {}
+[36.411148] (-) TimerEvent: {}
+[36.516500] (-) TimerEvent: {}
+[36.655933] (-) TimerEvent: {}
+[36.761639] (-) TimerEvent: {}
+[36.873100] (-) TimerEvent: {}
+[36.979217] (-) TimerEvent: {}
+[37.093999] (-) TimerEvent: {}
+[37.207572] (-) TimerEvent: {}
+[37.332209] (-) TimerEvent: {}
+[37.435288] (-) TimerEvent: {}
+[37.542940] (-) TimerEvent: {}
+[37.644091] (-) TimerEvent: {}
+[37.752485] (-) TimerEvent: {}
+[37.858932] (-) TimerEvent: {}
+[37.973036] (-) TimerEvent: {}
+[38.014252] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[38.081968] (-) TimerEvent: {}
+[38.196092] (-) TimerEvent: {}
+[38.257801] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[38.301257] (-) TimerEvent: {}
+[38.411006] (-) TimerEvent: {}
+[38.463301] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[38.465214] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[38.467523] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[38.511875] (-) TimerEvent: {}
+[38.617936] (-) TimerEvent: {}
+[38.720372] (-) TimerEvent: {}
+[38.868469] (-) TimerEvent: {}
+[39.094129] (-) TimerEvent: {}
+[39.224482] (-) TimerEvent: {}
+[39.342631] (-) TimerEvent: {}
+[39.490956] (-) TimerEvent: {}
+[39.592885] (-) TimerEvent: {}
+[39.737330] (-) TimerEvent: {}
+[39.848836] (-) TimerEvent: {}
+[39.957078] (-) TimerEvent: {}
+[40.063269] (-) TimerEvent: {}
+[40.174690] (-) TimerEvent: {}
+[40.281288] (-) TimerEvent: {}
+[40.387068] (-) TimerEvent: {}
+[40.489035] (-) TimerEvent: {}
+[40.590389] (-) TimerEvent: {}
+[40.693591] (-) TimerEvent: {}
+[40.799290] (-) TimerEvent: {}
+[40.901995] (-) TimerEvent: {}
+[41.002854] (-) TimerEvent: {}
+[41.114927] (-) TimerEvent: {}
+[41.216875] (-) TimerEvent: {}
+[41.335994] (-) TimerEvent: {}
+[41.437954] (-) TimerEvent: {}
+[41.539077] (-) TimerEvent: {}
+[41.653024] (-) TimerEvent: {}
+[41.753856] (-) TimerEvent: {}
+[41.856488] (-) TimerEvent: {}
+[41.957905] (-) TimerEvent: {}
+[42.062986] (-) TimerEvent: {}
+[42.164110] (-) TimerEvent: {}
+[42.287432] (-) TimerEvent: {}
+[42.388984] (-) TimerEvent: {}
+[42.491531] (-) TimerEvent: {}
+[42.595688] (-) TimerEvent: {}
+[42.697117] (-) TimerEvent: {}
+[42.750208] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[42.758990] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[42.762594] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[42.798473] (-) TimerEvent: {}
+[42.864905] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[42.899014] (-) TimerEvent: {}
+[42.999863] (-) TimerEvent: {}
+[43.110072] (-) TimerEvent: {}
+[43.215945] (-) TimerEvent: {}
+[43.318280] (-) TimerEvent: {}
+[43.381566] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[43.424570] (-) TimerEvent: {}
+[43.526039] (-) TimerEvent: {}
+[43.628497] (-) TimerEvent: {}
+[43.649382] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[43.728846] (-) TimerEvent: {}
+[43.831139] (-) TimerEvent: {}
+[43.939216] (-) TimerEvent: {}
+[44.043199] (-) TimerEvent: {}
+[44.165489] (-) TimerEvent: {}
+[44.267908] (-) TimerEvent: {}
+[44.370894] (-) TimerEvent: {}
+[44.474927] (-) TimerEvent: {}
+[44.575873] (-) TimerEvent: {}
+[44.678856] (-) TimerEvent: {}
+[44.781536] (-) TimerEvent: {}
+[44.883998] (-) TimerEvent: {}
+[44.990541] (-) TimerEvent: {}
+[45.096960] (-) TimerEvent: {}
+[45.199050] (-) TimerEvent: {}
+[45.305021] (-) TimerEvent: {}
+[45.412778] (-) TimerEvent: {}
+[45.520343] (-) TimerEvent: {}
+[45.648502] (-) TimerEvent: {}
+[45.763399] (-) TimerEvent: {}
+[45.873097] (-) TimerEvent: {}
+[45.978214] (-) TimerEvent: {}
+[46.121143] (-) TimerEvent: {}
+[46.201061] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[46.238416] (-) TimerEvent: {}
+[46.241708] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[46.341468] (-) TimerEvent: {}
+[46.509451] (-) TimerEvent: {}
+[46.512568] (lidar_odometry_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[46.610028] (-) TimerEvent: {}
+[46.712836] (-) TimerEvent: {}
+[46.822948] (-) TimerEvent: {}
+[46.838054] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[46.925805] (-) TimerEvent: {}
+[47.028686] (-) TimerEvent: {}
+[47.130262] (-) TimerEvent: {}
+[47.236302] (-) TimerEvent: {}
+[47.339993] (-) TimerEvent: {}
+[47.462131] (-) TimerEvent: {}
+[47.587437] (-) TimerEvent: {}
+[47.714134] (-) TimerEvent: {}
+[47.858346] (-) TimerEvent: {}
+[47.965318] (-) TimerEvent: {}
+[48.066933] (-) TimerEvent: {}
+[48.168260] (-) TimerEvent: {}
+[48.271692] (-) TimerEvent: {}
+[48.416397] (-) TimerEvent: {}
+[48.528032] (-) TimerEvent: {}
+[48.628830] (-) TimerEvent: {}
+[48.743374] (-) TimerEvent: {}
+[48.844837] (-) TimerEvent: {}
+[48.957984] (-) TimerEvent: {}
+[49.059699] (-) TimerEvent: {}
+[49.161344] (-) TimerEvent: {}
+[49.239400] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[49.262510] (-) TimerEvent: {}
+[49.363282] (-) TimerEvent: {}
+[49.472465] (-) TimerEvent: {}
+[49.574249] (-) TimerEvent: {}
+[49.587556] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces\n'}
+[49.675977] (lidar_odometry_interfaces) CommandEnded: {'returncode': 0}
+[49.684296] (-) TimerEvent: {}
+[49.685313] (lidar_odometry_interfaces) JobProgress: {'identifier': 'lidar_odometry_interfaces', 'progress': 'build'}
+[49.701984] (lidar_odometry_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces', '--', '-j8', '-l8'], 'cwd': '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces', 'env': OrderedDict([('HOSTNAME', '452820fbf51f'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu'), ('HOME', '/home/eagle'), ('OLDPWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[49.785421] (-) TimerEvent: {}
+[49.908881] (-) TimerEvent: {}
+[50.021101] (-) TimerEvent: {}
+[50.125301] (-) TimerEvent: {}
+[50.191946] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  3%] Generating C code for ROS interfaces\n'}
+[50.254781] (-) TimerEvent: {}
+[50.256841] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  6%] Generating Rust code for ROS interfaces\n'}
+[50.277353] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  9%] Generating C++ code for ROS interfaces\n'}
+[50.356979] (-) TimerEvent: {}
+[50.460243] (-) TimerEvent: {}
+[50.563849] (-) TimerEvent: {}
+[50.709128] (-) TimerEvent: {}
+[50.885506] (-) TimerEvent: {}
+[50.995602] (-) TimerEvent: {}
+[51.049856] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_lidar_odometry_interfaces\n'}
+[51.096036] (-) TimerEvent: {}
+[51.203515] (-) TimerEvent: {}
+[51.319593] (-) TimerEvent: {}
+[51.431491] (-) TimerEvent: {}
+[51.540762] (-) TimerEvent: {}
+[51.649382] (-) TimerEvent: {}
+[51.753400] (-) TimerEvent: {}
+[51.870771] (-) TimerEvent: {}
+[51.984870] (-) TimerEvent: {}
+[52.088921] (-) TimerEvent: {}
+[52.203475] (-) TimerEvent: {}
+[52.308798] (-) TimerEvent: {}
+[52.416828] (-) TimerEvent: {}
+[52.456946] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  9%] Built target lidar_odometry_interfaces__rs\n'}
+[52.463600] (lidar_odometry_interfaces) StdoutLine: {'line': b'[  9%] Built target lidar_odometry_interfaces__cpp\n'}
+[52.467647] (lidar_odometry_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[52.481907] (lidar_odometry_interfaces) StdoutLine: {'line': b'writing lidar_odometry_interfaces.egg-info/PKG-INFO\n'}
+[52.487853] (lidar_odometry_interfaces) StdoutLine: {'line': b'writing dependency_links to lidar_odometry_interfaces.egg-info/dependency_links.txt\n'}
+[52.491239] (lidar_odometry_interfaces) StdoutLine: {'line': b'writing top-level names to lidar_odometry_interfaces.egg-info/top_level.txt\n'}
+[52.517684] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 15%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[52.523069] (-) TimerEvent: {}
+[52.523395] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 15%] Generating C++ introspection for ROS interfaces\n'}
+[52.542173] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 18%] Generating C++ type support dispatch for ROS interfaces\n'}
+[52.624109] (-) TimerEvent: {}
+[52.728196] (-) TimerEvent: {}
+[52.752121] (lidar_odometry_interfaces) StdoutLine: {'line': b"reading manifest file 'lidar_odometry_interfaces.egg-info/SOURCES.txt'\n"}
+[52.777027] (lidar_odometry_interfaces) StdoutLine: {'line': b"writing manifest file 'lidar_odometry_interfaces.egg-info/SOURCES.txt'\n"}
+[52.828840] (-) TimerEvent: {}
+[52.951697] (-) TimerEvent: {}
+[53.002825] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_generator_c\n'}
+[53.037243] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_lidar_odometry_interfaces_egg\n'}
+[53.056250] (-) TimerEvent: {}
+[53.159406] (-) TimerEvent: {}
+[53.163166] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 21%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lidar_odometry_interfaces/msg/detail/processing_stats__functions.c.o\n'}
+[53.275321] (-) TimerEvent: {}
+[53.399654] (-) TimerEvent: {}
+[53.511263] (-) TimerEvent: {}
+[53.614314] (-) TimerEvent: {}
+[53.722945] (-) TimerEvent: {}
+[53.827499] (-) TimerEvent: {}
+[53.955185] (-) TimerEvent: {}
+[54.056384] (-) TimerEvent: {}
+[54.158635] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 25%] Linking C shared library liblidar_odometry_interfaces__rosidl_generator_c.so\n'}
+[54.159844] (-) TimerEvent: {}
+[54.261350] (-) TimerEvent: {}
+[54.277808] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[54.323939] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.cpp.o\n'}
+[54.328992] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_cpp\n'}
+[54.362968] (-) TimerEvent: {}
+[54.386624] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 28%] Built target lidar_odometry_interfaces__rosidl_generator_c\n'}
+[54.420744] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lidar_odometry_interfaces/msg/processing_stats__type_support.cpp.o\n'}
+[54.451168] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[54.463598] (-) TimerEvent: {}
+[54.482652] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 40%] Generating C introspection for ROS interfaces\n'}
+[54.501222] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 40%] Generating C type support for eProsima Fast-RTPS\n'}
+[54.526258] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 40%] Generating C type support dispatch for ROS interfaces\n'}
+[54.565012] (-) TimerEvent: {}
+[54.606909] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lidar_odometry_interfaces/msg/detail/dds_fastrtps/processing_stats__type_support.cpp.o\n'}
+[54.669588] (-) TimerEvent: {}
+[54.789311] (-) TimerEvent: {}
+[54.912853] (-) TimerEvent: {}
+[55.049917] (-) TimerEvent: {}
+[55.151747] (-) TimerEvent: {}
+[55.261338] (-) TimerEvent: {}
+[55.402418] (-) TimerEvent: {}
+[55.567155] (-) TimerEvent: {}
+[55.683880] (-) TimerEvent: {}
+[55.798551] (-) TimerEvent: {}
+[55.901038] (-) TimerEvent: {}
+[56.156666] (-) TimerEvent: {}
+[56.289342] (-) TimerEvent: {}
+[56.410300] (-) TimerEvent: {}
+[56.612380] (-) TimerEvent: {}
+[56.748527] (-) TimerEvent: {}
+[56.854218] (-) TimerEvent: {}
+[56.959794] (-) TimerEvent: {}
+[57.068895] (-) TimerEvent: {}
+[57.171684] (-) TimerEvent: {}
+[57.286532] (-) TimerEvent: {}
+[57.387839] (-) TimerEvent: {}
+[57.506856] (-) TimerEvent: {}
+[57.630394] (-) TimerEvent: {}
+[57.732579] (-) TimerEvent: {}
+[57.803437] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_c\n'}
+[57.879985] (-) TimerEvent: {}
+[58.008003] (-) TimerEvent: {}
+[58.129097] (-) TimerEvent: {}
+[58.172419] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lidar_odometry_interfaces/msg/processing_stats__type_support.cpp.o\n'}
+[58.229068] (-) TimerEvent: {}
+[58.256430] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_introspection_c\n'}
+[58.331287] (-) TimerEvent: {}
+[58.443533] (-) TimerEvent: {}
+[58.545250] (-) TimerEvent: {}
+[58.576708] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 50%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.c.o\n'}
+[58.651310] (-) TimerEvent: {}
+[58.757825] (-) TimerEvent: {}
+[58.760796] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 53%] Linking CXX shared library liblidar_odometry_interfaces__rosidl_typesupport_c.so\n'}
+[58.860349] (-) TimerEvent: {}
+[58.966600] (-) TimerEvent: {}
+[59.074564] (-) TimerEvent: {}
+[59.188346] (-) TimerEvent: {}
+[59.205321] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 56%] Linking CXX shared library liblidar_odometry_interfaces__rosidl_typesupport_cpp.so\n'}
+[59.299998] (-) TimerEvent: {}
+[59.312469] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[59.401165] (-) TimerEvent: {}
+[59.460969] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 59%] Building CXX object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lidar_odometry_interfaces/msg/detail/processing_stats__type_support_c.cpp.o\n'}
+[59.538154] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 59%] Built target lidar_odometry_interfaces__rosidl_typesupport_c\n'}
+[59.618981] (-) TimerEvent: {}
+[59.689059] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 62%] Linking C shared library liblidar_odometry_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[59.720503] (-) TimerEvent: {}
+[59.761007] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 62%] Built target lidar_odometry_interfaces__rosidl_typesupport_cpp\n'}
+[59.826469] (-) TimerEvent: {}
+[59.947874] (-) TimerEvent: {}
+[60.050111] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 62%] Built target lidar_odometry_interfaces__rosidl_typesupport_introspection_c\n'}
+[60.088027] (-) TimerEvent: {}
+[60.205061] (-) TimerEvent: {}
+[60.307425] (-) TimerEvent: {}
+[60.417999] (-) TimerEvent: {}
+[60.469039] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 65%] Linking CXX shared library liblidar_odometry_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[60.517939] (-) TimerEvent: {}
+[60.626860] (-) TimerEvent: {}
+[60.730198] (-) TimerEvent: {}
+[60.747431] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 65%] Built target lidar_odometry_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[60.830334] (-) TimerEvent: {}
+[60.874847] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 68%] Linking CXX shared library liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[60.931852] (-) TimerEvent: {}
+[61.032861] (-) TimerEvent: {}
+[61.152493] (-) TimerEvent: {}
+[61.265172] (-) TimerEvent: {}
+[61.301751] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 68%] Built target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[61.366139] (-) TimerEvent: {}
+[61.467276] (-) TimerEvent: {}
+[61.577897] (-) TimerEvent: {}
+[61.604430] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 71%] Linking CXX shared library liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[61.679331] (-) TimerEvent: {}
+[61.787366] (-) TimerEvent: {}
+[61.893052] (-) TimerEvent: {}
+[61.952417] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 71%] Built target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[61.994761] (-) TimerEvent: {}
+[62.061776] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 71%] Built target lidar_odometry_interfaces\n'}
+[62.095862] (-) TimerEvent: {}
+[62.182196] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 75%] Generating Python code for ROS interfaces\n'}
+[62.197582] (-) TimerEvent: {}
+[62.300213] (-) TimerEvent: {}
+[62.401849] (-) TimerEvent: {}
+[62.504134] (-) TimerEvent: {}
+[62.604907] (-) TimerEvent: {}
+[62.706813] (-) TimerEvent: {}
+[62.828989] (-) TimerEvent: {}
+[62.933987] (-) TimerEvent: {}
+[63.038170] (-) TimerEvent: {}
+[63.138805] (-) TimerEvent: {}
+[63.253493] (-) TimerEvent: {}
+[63.371127] (-) TimerEvent: {}
+[63.474823] (-) TimerEvent: {}
+[63.576048] (-) TimerEvent: {}
+[63.682074] (-) TimerEvent: {}
+[63.785327] (-) TimerEvent: {}
+[63.893842] (-) TimerEvent: {}
+[63.990289] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 75%] Built target lidar_odometry_interfaces__py\n'}
+[63.994928] (-) TimerEvent: {}
+[64.096256] (-) TimerEvent: {}
+[64.204870] (-) TimerEvent: {}
+[64.208804] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_generator_py\n'}
+[64.307226] (-) TimerEvent: {}
+[64.323911] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 78%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lidar_odometry_interfaces/msg/_processing_stats_s.c.o\n'}
+[64.407886] (-) TimerEvent: {}
+[64.519236] (-) TimerEvent: {}
+[64.628820] (-) TimerEvent: {}
+[64.747634] (-) TimerEvent: {}
+[64.852988] (-) TimerEvent: {}
+[64.956191] (-) TimerEvent: {}
+[65.076093] (-) TimerEvent: {}
+[65.178937] (-) TimerEvent: {}
+[65.282210] (-) TimerEvent: {}
+[65.386523] (-) TimerEvent: {}
+[65.489863] (-) TimerEvent: {}
+[65.610333] (-) TimerEvent: {}
+[65.659345] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 81%] Linking C shared library rosidl_generator_py/lidar_odometry_interfaces/liblidar_odometry_interfaces__rosidl_generator_py.so\n'}
+[65.719402] (-) TimerEvent: {}
+[65.821899] (-) TimerEvent: {}
+[65.924433] (-) TimerEvent: {}
+[65.990960] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 81%] Built target lidar_odometry_interfaces__rosidl_generator_py\n'}
+[66.028581] (-) TimerEvent: {}
+[66.130257] (-) TimerEvent: {}
+[66.232079] (-) TimerEvent: {}
+[66.338396] (-) TimerEvent: {}
+[66.425603] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_c__pyext\n'}
+[66.439295] (-) TimerEvent: {}
+[66.440914] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[66.444606] (lidar_odometry_interfaces) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[66.540170] (-) TimerEvent: {}
+[66.544865] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[66.551583] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_c.c.o\n'}
+[66.561642] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[66.653893] (-) TimerEvent: {}
+[66.781904] (-) TimerEvent: {}
+[66.906171] (-) TimerEvent: {}
+[67.013146] (-) TimerEvent: {}
+[67.122903] (-) TimerEvent: {}
+[67.229208] (-) TimerEvent: {}
+[67.336426] (-) TimerEvent: {}
+[67.439440] (-) TimerEvent: {}
+[67.541284] (-) TimerEvent: {}
+[67.604218] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 93%] Linking C shared library rosidl_generator_py/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[67.642354] (-) TimerEvent: {}
+[67.761370] (-) TimerEvent: {}
+[67.847774] (lidar_odometry_interfaces) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[67.870510] (-) TimerEvent: {}
+[67.874797] (lidar_odometry_interfaces) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[67.958534] (lidar_odometry_interfaces) StdoutLine: {'line': b'[100%] Built target lidar_odometry_interfaces__rosidl_typesupport_c__pyext\n'}
+[67.974122] (-) TimerEvent: {}
+[68.075119] (-) TimerEvent: {}
+[68.121860] (lidar_odometry_interfaces) StdoutLine: {'line': b'[100%] Built target lidar_odometry_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[68.136231] (lidar_odometry_interfaces) StdoutLine: {'line': b'[100%] Built target lidar_odometry_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[68.175592] (-) TimerEvent: {}
+[68.226849] (lidar_odometry_interfaces) CommandEnded: {'returncode': 0}
+[68.245058] (lidar_odometry_interfaces) JobProgress: {'identifier': 'lidar_odometry_interfaces', 'progress': 'install'}
+[68.294436] (-) TimerEvent: {}
+[68.323422] (lidar_odometry_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces'], 'cwd': '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces', 'env': OrderedDict([('HOSTNAME', '452820fbf51f'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/aarch64-linux-gnu'), ('HOME', '/home/eagle'), ('OLDPWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/build/lidar_odometry_interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[68.347119] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[68.350656] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/ament_index/resource_index/rosidl_interfaces/lidar_odometry_interfaces\n'}
+[68.354072] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.355862] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.358186] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[68.359940] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/processing_stats.h\n'}
+[68.373343] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.375335] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__functions.c\n'}
+[68.384361] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.h\n'}
+[68.391541] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__struct.h\n'}
+[68.394881] (-) TimerEvent: {}
+[68.398659] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__functions.h\n'}
+[68.422137] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/library_path.sh\n'}
+[68.423905] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/library_path.dsv\n'}
+[68.435977] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_generator_c.so\n'}
+[68.447150] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_generator_c.so" to ""\n'}
+[68.449300] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.452115] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.455034] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.457906] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__rosidl_typesupport_fastrtps_c.h\n'}
+[68.498470] (-) TimerEvent: {}
+[68.505248] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[68.519831] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[68.578127] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[68.579646] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.582044] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.583679] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.587294] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__rosidl_typesupport_introspection_c.h\n'}
+[68.598011] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.c\n'}
+[68.599653] (-) TimerEvent: {}
+[68.606082] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[68.632152] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[68.661985] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[68.670612] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_c.so\n'}
+[68.679598] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[68.680741] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.681851] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.683708] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.687092] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__builder.hpp\n'}
+[68.701594] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__traits.hpp\n'}
+[68.704636] (-) TimerEvent: {}
+[68.729459] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.hpp\n'}
+[68.740322] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__struct.hpp\n'}
+[68.748247] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[68.750236] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/processing_stats.hpp\n'}
+[68.799628] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.801693] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.803266] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[68.805333] (-) TimerEvent: {}
+[68.805648] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.823351] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/dds_fastrtps\n'}
+[68.839355] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[68.854601] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[68.888402] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[68.890892] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces\n'}
+[68.892652] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg\n'}
+[68.895953] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail\n'}
+[68.913003] (-) TimerEvent: {}
+[68.918205] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__rosidl_typesupport_introspection_cpp.hpp\n'}
+[69.013959] (-) TimerEvent: {}
+[69.050978] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/include/lidar_odometry_interfaces/lidar_odometry_interfaces/msg/detail/processing_stats__type_support.cpp\n'}
+[69.080472] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[69.114731] (-) TimerEvent: {}
+[69.128149] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[69.134809] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_cpp.so\n'}
+[69.149965] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[69.152458] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/pythonpath.sh\n'}
+[69.158185] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/pythonpath.dsv\n'}
+[69.210273] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces-0.0.0-py3.10.egg-info\n'}
+[69.233610] (-) TimerEvent: {}
+[69.243028] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[69.395653] (-) TimerEvent: {}
+[69.514881] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[69.518067] (-) TimerEvent: {}
+[69.536199] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[69.559260] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[69.572696] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces\n'}
+[69.581100] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg\n'}
+[69.584831] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg/_processing_stats.py\n'}
+[69.597738] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg/__init__.py\n'}
+[69.606516] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg/_processing_stats_s.c\n'}
+[69.624628] (-) TimerEvent: {}
+[69.644694] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[69.727988] (-) TimerEvent: {}
+[69.774008] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/__init__.py\n'}
+[69.815701] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[69.831132] (-) TimerEvent: {}
+[69.880215] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/liblidar_odometry_interfaces__rosidl_generator_py.so\n'}
+[69.939527] (-) TimerEvent: {}
+[69.996290] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[70.039817] (-) TimerEvent: {}
+[70.061970] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[70.089539] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[70.136504] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/_lidar_odometry_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[70.144280] (-) TimerEvent: {}
+[70.273056] (-) TimerEvent: {}
+[70.380992] (-) TimerEvent: {}
+[70.483521] (-) TimerEvent: {}
+[70.594372] (-) TimerEvent: {}
+[70.600690] (lidar_odometry_interfaces) StdoutLine: {'line': b"Listing '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces'...\n"}
+[70.605357] (lidar_odometry_interfaces) StdoutLine: {'line': b"Compiling '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/__init__.py'...\n"}
+[70.606098] (lidar_odometry_interfaces) StdoutLine: {'line': b"Listing '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg'...\n"}
+[70.613791] (lidar_odometry_interfaces) StdoutLine: {'line': b"Compiling '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg/__init__.py'...\n"}
+[70.676798] (lidar_odometry_interfaces) StdoutLine: {'line': b"Compiling '/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/msg/_processing_stats.py'...\n"}
+[70.695238] (-) TimerEvent: {}
+[70.699747] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[70.717903] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[70.721370] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[70.741821] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[70.747345] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[70.763094] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/local/lib/python3.10/dist-packages/lidar_odometry_interfaces/lidar_odometry_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[70.771220] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_generator_py.so\n'}
+[70.794399] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/lib/liblidar_odometry_interfaces__rosidl_generator_py.so" to ""\n'}
+[70.798705] (-) TimerEvent: {}
+[70.800076] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust\n'}
+[70.803914] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/Cargo.toml\n'}
+[70.811068] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/build.rs\n'}
+[70.822514] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/src\n'}
+[70.826975] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/src/msg\n'}
+[70.829253] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/src/msg/rmw.rs\n'}
+[70.841515] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/src/lib.rs\n'}
+[70.853867] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/rust/src/msg.rs\n'}
+[70.864852] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/msg/ProcessingStats.idl\n'}
+[70.880582] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/msg/ProcessingStats.msg\n'}
+[70.895788] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/ament_index/resource_index/package_run_dependencies/lidar_odometry_interfaces\n'}
+[70.898220] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/ament_index/resource_index/parent_prefix_path/lidar_odometry_interfaces\n'}
+[70.906693] (-) TimerEvent: {}
+[70.932925] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/ament_prefix_path.sh\n'}
+[70.998898] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/ament_prefix_path.dsv\n'}
+[71.008213] (-) TimerEvent: {}
+[71.011058] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/path.sh\n'}
+[71.012762] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/environment/path.dsv\n'}
+[71.037541] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/local_setup.bash\n'}
+[71.041382] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/local_setup.sh\n'}
+[71.046079] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/local_setup.zsh\n'}
+[71.054997] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/local_setup.dsv\n'}
+[71.088037] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/package.dsv\n'}
+[71.109007] (-) TimerEvent: {}
+[71.115844] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/ament_index/resource_index/packages/lidar_odometry_interfaces\n'}
+[71.142502] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_generator_cExport.cmake\n'}
+[71.147293] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_generator_cExport-debug.cmake\n'}
+[71.153151] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[71.156894] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cExport-debug.cmake\n'}
+[71.169263] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[71.175568] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[71.181435] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[71.188399] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_cExport-debug.cmake\n'}
+[71.199340] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_generator_cppExport.cmake\n'}
+[71.210378] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[71.211463] (-) TimerEvent: {}
+[71.217497] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_typesupport_fastrtps_cppExport-debug.cmake\n'}
+[71.227476] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[71.229653] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[71.233101] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[71.234641] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfaces__rosidl_typesupport_cppExport-debug.cmake\n'}
+[71.239600] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_generator_pyExport.cmake\n'}
+[71.241576] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/export_lidar_odometry_interfaces__rosidl_generator_pyExport-debug.cmake\n'}
+[71.244821] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[71.246392] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[71.248213] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[71.250435] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[71.253647] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[71.255531] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[71.257269] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[71.258417] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[71.260279] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfacesConfig.cmake\n'}
+[71.261860] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Up-to-date: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/cmake/lidar_odometry_interfacesConfig-version.cmake\n'}
+[71.264399] (lidar_odometry_interfaces) StdoutLine: {'line': b'-- Installing: /Volumes/FRAGMENT/user/sfmac/data/utm/devUbuntuSharedData/eagle/eagle-odometry-task/install/lidar_odometry_interfaces/share/lidar_odometry_interfaces/package.xml\n'}
+[71.322592] (lidar_odometry_interfaces) CommandEnded: {'returncode': 0}
+[71.340659] (-) TimerEvent: {}
+[71.441908] (-) TimerEvent: {}
+[71.546916] (-) TimerEvent: {}
+[71.649818] (-) TimerEvent: {}
+[71.696337] (lidar_odometry_interfaces) JobEnded: {'identifier': 'lidar_odometry_interfaces', 'rc': 0}
+[71.708496] (-) EventReactorShutdown: {}
