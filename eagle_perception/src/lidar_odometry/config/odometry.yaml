@@ -35,7 +35,7 @@ lidar_odometry:
       normal_neighbours: 10       # map points used to fit the plane behind each normal
 
     registration:
-      max_iterations: 30
+      max_iterations: 100
       max_correspondence_distance: 1.0   # [m] pairs farther apart than this are dropped
       robust_kernel_scale: 0.2           # [m] a pair with this residual gets half the weight
       convergence_epsilon: 1.0e-4        # stop when the update (m and rad) is smaller than this

@@ -51,7 +51,7 @@ target_link_libraries(odometry_node ${PCL_LIBRARIES} Eigen3::Eigen)
 ament_target_dependencies(odometry_node lidar_odometry_interfaces rclcpp sensor_msgs std_msgs tf2_ros tf2_eigen pcl_conversions geometry_msgs nav_msgs visualization_msgs)
 
 install(TARGETS odometry_node DESTINATION lib/${PROJECT_NAME})
-install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY launch config rviz DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()

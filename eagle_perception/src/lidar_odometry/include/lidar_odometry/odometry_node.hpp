@@ -48,7 +48,7 @@ private:
   Preprocessor preprocessor_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr filtered_pub_;
 
-    // Built in the constructor's initializer list, so keep them declared in this order.
+  // Built in the constructor's initializer list, so keep them declared in this order.
   LocalMap local_map_;
   ScanMatcher scan_matcher_;
   double scan_voxel_size_{};  // [m] coarse voxel for the scan that gets registered

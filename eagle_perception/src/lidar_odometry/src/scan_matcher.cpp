@@ -36,7 +36,7 @@ RegistrationResult ScanMatcher::align(
       break;
     }
   }
-
+    // add
   result.valid = true;
   result.pose = makePose2D(x, y, yaw);
   return result;
