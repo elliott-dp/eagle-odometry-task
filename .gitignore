@@ -4,3 +4,4 @@ log/
 cmake-build-*/
 recordings/
 .DS_Store
+.idea/
